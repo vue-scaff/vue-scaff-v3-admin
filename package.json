@@ -1,0 +1,29 @@
+{
+  "name": "vue-scaff-vite",
+  "version": "1.0.0",
+  "author": "joenix",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@scaff/vite": "^3.6.2",
+    "ant-design-vue": "^3.3.0-beta.3",
+    "vue-http-fast": "^1.0.0"
+  },
+  "devDependencies": {
+    "@scaff/typescript": "^3.5.74",
+    "@scaff/vite-plugin-node": "^3.5.53",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "vite": "^3.0.7",
+    "vue-tsc": "^0.40.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "configAlias": "scaff.config"
+}
