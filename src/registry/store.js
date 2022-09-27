@@ -2,7 +2,12 @@ export default ({}) => {
   // Get Oss from Scaff Configure
   const { oss } = process.env.scaff.conf;
 
+  // Get Token from LocalStorage
+  const token = localStorage.getItem('token');
+
   const state = {
+    token,
+
     // Metas for Site
     meta: {
       oss,

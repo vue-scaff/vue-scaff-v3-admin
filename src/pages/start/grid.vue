@@ -1,11 +1,13 @@
 <style lang="less">
-.ant-col {
-  color: @white;
-  background-color: @primary;
-  padding: @atom 0;
+.grid {
+  .ant-col {
+    color: @white;
+    background-color: @primary;
+    padding: @atom 0;
 
-  &:nth-child(2n + 1) {
-    background-color: lighten(@primary, 12%);
+    &:nth-child(2n + 1) {
+      background-color: lighten(@primary, 12%);
+    }
   }
 }
 </style>

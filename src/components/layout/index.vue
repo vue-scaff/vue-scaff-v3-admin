@@ -45,3 +45,20 @@
     </vs-flex>
   </vs-flex>
 </template>
+
+<script>
+export default {
+  props: {
+    certification: {
+      type: [Boolean],
+      default: true,
+    },
+  },
+
+  beforeMount() {
+    if (this.certification && !this.app.token) {
+      this.$router.replace({ name: 'login' });
+    }
+  },
+};
+</script>

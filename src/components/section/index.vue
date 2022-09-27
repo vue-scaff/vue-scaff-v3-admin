@@ -27,8 +27,8 @@
 </style>
 
 <template>
-  <div class="section">
-    <vs-flex class="section--header" justify="between" v-if="$slots.header || $slots.affix">
+  <div class="section" :style="css">
+    <vs-flex class="section--header" justify="between" :style="headerCss" v-if="$slots.header || $slots.affix">
       <slot name="header" />
       <vs-flex class="section--affix" v-if="$slots.affix">
         <slot name="affix" />
@@ -37,7 +37,7 @@
     <div class="section--container">
       <slot />
     </div>
-    <div class="section--footer" v-if="$slots.footer">
+    <div class="section--footer" :style="footerCss" v-if="$slots.footer">
       <slot name="footer" />
     </div>
   </div>

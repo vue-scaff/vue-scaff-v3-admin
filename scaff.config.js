@@ -18,7 +18,7 @@ module.exports = {
   },
 
   theme: {
-    'primary-color': '#ec2c34',
+    'primary-color': '#ec2c34', // '#1890ff'
   },
 
   lessVariables: '/variables.module.less',

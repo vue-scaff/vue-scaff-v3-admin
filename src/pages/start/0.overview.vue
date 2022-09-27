@@ -6,6 +6,7 @@
     <template #header>
       <a-typography-title :level="3">VUE SCAFF ADMIN</a-typography-title>
     </template>
+
     <http :api="$api.mock" :responseInterceptor="responseInterceptorHandler" v-slot="{ data }" ref="http">
       <a-typography-title :level="4">Hi there! 😜</a-typography-title>
       <a-typography-paragraph>I'm {{ data.author + (Math.random() * 10000).toFixed(0) }}, a web developer. And author of vue-scaff.</a-typography-paragraph>

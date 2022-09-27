@@ -1,3 +1,6 @@
+// Get Token from localStorage
+const token = localStorage.getItem('token');
+
 export default [
   {
     path: '/:pathMatch(.*)*',
