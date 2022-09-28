@@ -76,6 +76,18 @@ export default ({ $http, $api }) => {
         value: '2022-10-10',
       },
     },
+
+    tabers: {
+      michael: {
+        title: 'MICHAEL JORDAN',
+      },
+      kobe: {
+        title: 'KOBE BRYANT',
+      },
+      allen: {
+        title: 'ALLEN IVERSON',
+      },
+    },
   };
 
   const mutations = {};

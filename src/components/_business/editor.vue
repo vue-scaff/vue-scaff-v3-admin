@@ -7,20 +7,24 @@ export default {
   name: 'bs-editor',
 
   data() {
+    const { info } = this.$message;
+
+    const time = new Date().toDateString();
+
     return {
       option: {
         menubar: false,
-        toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | oss',
+        toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | time',
 
         setup(editor) {
-          editor.ui.registry.addButton('oss', {
+          editor.ui.registry.addButton('time', {
             icon: 'insert-time',
-            text: 'OSS',
+            text: 'TIME',
             onSetup(api) {
-              console.log('api in setup', api);
+              console.log(time);
             },
             onAction(api) {
-              console.log('api in action:', api);
+              info(time);
             },
           });
         },

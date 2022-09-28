@@ -42,7 +42,7 @@
 
     <vs-section>
       <a-typography-paragraph>
-        <a-typography-title>Condition Options</a-typography-title>
+        <a-typography-title :level="3">Condition Options</a-typography-title>
         <pre><code>{{ start.conditions }}</code></pre>
       </a-typography-paragraph>
     </vs-section>

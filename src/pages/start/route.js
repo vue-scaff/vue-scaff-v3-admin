@@ -69,6 +69,15 @@ export default () => {
         component: () => import('@/pages/start/5.detail.vue'),
       },
       {
+        path: '/start/taber',
+        name: 'start-taber',
+        meta: {
+          index: 106,
+          title: 'TABER',
+        },
+        component: () => import('@/pages/start/6.taber.vue'),
+      },
+      {
         path: '/start/editor',
         name: 'start-editor',
         meta: {
