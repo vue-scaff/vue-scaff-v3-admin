@@ -4,6 +4,7 @@ export default () => {
   return {
     path: '/start',
     name: 'start',
+    // hidden: true,
     redirect: {
       name: 'start-overview',
     },
@@ -78,6 +79,15 @@ export default () => {
         component: () => import('@/pages/start/6.taber.vue'),
       },
       {
+        path: '/start/grid',
+        name: 'start-grid',
+        meta: {
+          index: 107,
+          title: 'GRID',
+        },
+        component: () => import('@/pages/start/7.grid.vue'),
+      },
+      {
         path: '/start/editor',
         name: 'start-editor',
         meta: {
@@ -85,15 +95,6 @@ export default () => {
           title: 'EDITOR',
         },
         component: () => import('@/pages/start/8.editor.vue'),
-      },
-      {
-        path: '/start/grid',
-        name: 'start-grid',
-        meta: {
-          index: 109,
-          title: 'GRID',
-        },
-        component: () => import('@/pages/start/grid.vue'),
       },
     ],
   };

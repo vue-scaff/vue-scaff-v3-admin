@@ -34,7 +34,7 @@
         <slot name="affix" />
       </vs-flex>
     </vs-flex>
-    <div class="section--container">
+    <div class="section--container" :style="contentCss">
       <slot />
     </div>
     <div class="section--footer" :style="footerCss" v-if="$slots.footer">
@@ -57,6 +57,10 @@ export default {
       default: {},
     },
     footerCss: {
+      type: [Object],
+      default: {},
+    },
+    contentCss: {
       type: [Object],
       default: {},
     },

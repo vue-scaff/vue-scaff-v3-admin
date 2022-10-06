@@ -2,26 +2,26 @@ import component from '@/components/layout/index.vue';
 
 export default () => {
   return {
-    path: '/contact',
-    name: 'contact',
+    path: '/links',
+    name: 'links',
     redirect: {
-      name: 'contact-team',
+      name: 'links-index',
     },
     meta: {
       index: 900,
-      title: 'CONTACT',
+      title: 'LINKS',
       icon: 'ordered-list-outlined',
     },
     component,
     children: [
       {
-        path: '/contact/team',
-        name: 'contact-team',
+        path: '/links/index',
+        name: 'links-index',
         meta: {
           index: 901,
-          title: 'TEAM',
+          title: 'REPOS',
         },
-        component: () => import('@/pages/contact/team.vue'),
+        component: () => import('@/pages/links/index.vue'),
       },
     ],
   };

@@ -30,6 +30,11 @@ export default {
       default: 'normal',
     },
 
+    wrap: {
+      type: [String],
+      default: 'nowrap',
+    },
+
     flex: {
       type: [String, Number],
       default: 'none',
@@ -70,6 +75,7 @@ export default {
         'flex-direction': `${this.dict[this.direction]}`,
         'justify-content': `${this.dict[this.justify]}`,
         'align-items': `${this.dict[this.align]}`,
+        'flex-wrap': `${this.wrap}`,
         flex: `${this.flex}`,
         width: /^\d+$/.test(this.width) ? `${this.width}px` : this.width,
         height: /^\d+$/.test(this.height) ? `${this.height}px` : this.height,
