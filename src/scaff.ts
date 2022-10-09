@@ -4,6 +4,9 @@ import * as Antv from 'ant-design-vue';
 // Use Antv Icons
 import * as Icons from '@ant-design/icons-vue';
 
+// Use Business Components
+import vsaComponents from 'vue-scaff-admin-components';
+
 // Use TinyMCE
 import Editor from '@tinymce/tinymce-vue';
 
@@ -14,6 +17,9 @@ import Editor from '@tinymce/tinymce-vue';
 export default ({ app, util, route, store, style, i18n, $http, md, custom }, next) => {
   // Extension Antv
   app.use(Antv);
+
+  // Extension Vue Scaff Admin
+  app.use(vsaComponents);
 
   // Use TinyMce
   app.component('editor', Editor);
