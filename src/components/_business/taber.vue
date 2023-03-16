@@ -41,7 +41,7 @@
 
 <template>
   <div class="taber">
-    <a-tabs v-model:active-key="active">
+    <a-tabs v-model:active-key="key" @change="value => $emit('update:active', value)">
       <a-tab-pane v-for="(data, key) in options" :key="key" :tab="data.title" :forceRender="true" />
     </a-tabs>
 
@@ -70,6 +70,12 @@ export default {
       type: [String, Number],
       default: -1,
     },
+  },
+
+  data() {
+    return {
+      key: this.active,
+    };
   },
 };
 </script>

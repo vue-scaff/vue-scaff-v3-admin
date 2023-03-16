@@ -1307,10 +1307,10 @@
     "@scaff/version" "^3.5.20"
     merge-deep "^3.0.3"
 
-"@scaff/kit@^3.6.6":
-  version "3.6.6"
-  resolved "https://registry.yarnpkg.com/@scaff/kit/-/kit-3.6.6.tgz#636fa46c837dbb1f00bc750c224d77b9fedfcfc2"
-  integrity sha512-8s/Xh8Sjo3sPEnb8T6eYWeGiq2zsm1nrHqgQXBl3YFVeb7aDpBTI3wMlpoGXHBbsV/NJiaxo5fom2EFB7r1bIg==
+"@scaff/kit@^3.6.7":
+  version "3.6.7"
+  resolved "https://registry.yarnpkg.com/@scaff/kit/-/kit-3.6.7.tgz#5569613531024c35d09553da8cf9d0a2f86c8c24"
+  integrity sha512-ii22+/u9AthdUAKQukIVezn+Dr2rwcxGv7x83WE2gr2I3mlpQBacqrZ4C08BMuZQxV9f+kYLivRO9tVa4pa4Pw==
   dependencies:
     "@scaff/version" "^3.5.20"
     foreach.js "^2.1.7"
@@ -1348,18 +1348,18 @@
     sass-loader "^12.4.0"
     style-resources-loader "^1.5.0"
 
-"@scaff/vite@^3.6.6":
-  version "3.6.6"
-  resolved "https://registry.yarnpkg.com/@scaff/vite/-/vite-3.6.6.tgz#d1ca7cf9a3a3a0e3dae726bdde67c773a78c7714"
-  integrity sha512-gDZQKD6owoRK+RMMmtVJRQ5P43rQhZ8DvspeIHlxMO8iZlDaA4Oyz1FfWYZqN+EARmb1Pq+2kXBqusBglSVnqg==
+"@scaff/vite@^3.6.7":
+  version "3.6.7"
+  resolved "https://registry.yarnpkg.com/@scaff/vite/-/vite-3.6.7.tgz#252cc9c654c3b56f240c714a2264857df1c89e81"
+  integrity sha512-8/0Ovg5sB9PRyhNQMehzxYLQ84iQhdXY1J1PpZQ9LtS6NSEJ6z5P+Pkt/3D3SSpNW4/q3J0e07qjv/1O1vHSfA==
   dependencies:
-    "@scaff/kit" "^3.6.6"
-    "@scaff/vue" "^3.5.78"
+    "@scaff/kit" "^3.6.7"
+    "@scaff/vue" "^3.6.7"
 
-"@scaff/vue@^3.5.78":
-  version "3.5.78"
-  resolved "https://registry.yarnpkg.com/@scaff/vue/-/vue-3.5.78.tgz#5746ddb4a3997618857f1766cb3dd9cc52ad2eb3"
-  integrity sha512-qmD8yhsr3jDRQLF+CVDlAa+Kq7zURjTOP6vuPs/7EKomqNU5xfgI1PtfbDCFvCr9AlZar47Dw7m9rsLt18hBSA==
+"@scaff/vue@^3.6.7":
+  version "3.6.7"
+  resolved "https://registry.yarnpkg.com/@scaff/vue/-/vue-3.6.7.tgz#8bcf0b99f161fd4553c693808825f7fddcf550b2"
+  integrity sha512-jq6MJhGC56NR1L3tG+CQmQdDAJcFzzZA2nL1DPL5r7div1vZePMExD7bp8is9siEx/ggOo0rPpPYQOTurG9G5Q==
   dependencies:
     promise-super "^1.3.2"
     qs "^6.11.0"
@@ -7054,10 +7054,10 @@ vue-router@4.1.3:
   dependencies:
     "@vue/devtools-api" "^6.1.4"
 
-vue-scaff-admin-components@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vue-scaff-admin-components/-/vue-scaff-admin-components-1.0.0.tgz#e3641ed182494758899920e9f07a706856eb36a3"
-  integrity sha512-IKyZ4Fp+RBrIk9jkNzR0EeC5CYgiaUIe+1XGk58gZrpRTLr+D7Gbnz7MLQmGnBAaLBZmJADKIHxncKsHvEBYxg==
+vue-scaff-admin-components@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-scaff-admin-components/-/vue-scaff-admin-components-1.0.3.tgz#ee329e6d707ee34c9deb462d25074b7bca5d7d56"
+  integrity sha512-dmipfWHglE4iAxWcGIHkPQ3R9JZeKJBg2JSLmKdOhK7Q8qEOf834zDxo01PfZQ+PqZgmhhXYkWG8p5TAldFP+A==
 
 vue-scaff@*:
   version "3.5.21"

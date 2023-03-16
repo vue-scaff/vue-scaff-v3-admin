@@ -12,7 +12,7 @@ export default [
   {
     path: '/',
     redirect: {
-      name: 'start-overview',
+      name: 'start',
     },
     hidden: true,
   },

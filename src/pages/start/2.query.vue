@@ -4,17 +4,18 @@
       <a-typography-title :level="4">Example Query Update</a-typography-title>
     </template>
 
+    <!-- Form -->
     <a-form :label-col="{ span: 4 }">
       <a-form-item label="Name">
-        <a-input v-model:value="name" />
+        <a-input v-model:value="source.name" />
       </a-form-item>
       <a-form-item label="Address">
-        <a-input v-model:value="address" />
+        <a-input v-model:value="source.address" />
       </a-form-item>
     </a-form>
 
     <!-- Transfer -->
-    <bs-query :source="{ name, address }"></bs-query>
+    <bs-query v-model:source="source" />
   </vs-section>
 </template>
 
@@ -22,8 +23,10 @@
 export default {
   data() {
     return {
-      name: '',
-      address: '',
+      source: {
+        name: '',
+        address: '',
+      },
     };
   },
 };

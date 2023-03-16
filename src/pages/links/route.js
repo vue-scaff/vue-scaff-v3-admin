@@ -1,4 +1,4 @@
-import { layout } from 'vue-scaff-admin-components';
+import component from '@/components/layout/index.vue';
 
 export default () => {
   return {
@@ -12,7 +12,7 @@ export default () => {
       title: 'LINKS',
       icon: 'ordered-list-outlined',
     },
-    component: layout,
+    component,
     children: [
       {
         path: '/links/index',

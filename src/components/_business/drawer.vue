@@ -7,7 +7,7 @@
 </style>
 
 <template>
-  <a-drawer class="drawer" v-model:visible="visible" placement="right" :size="size" :width="width" :title="title" @after-visible-change="visibleHandle">
+  <a-drawer class="drawer" v-model:visible="visual" placement="right" :size="size" :width="width" :title="title" @close="closeHandle" @after-visible-change="visibleHandle">
     <template #extra>
       <slot name="affix" />
     </template>
@@ -45,6 +45,12 @@ export default {
     },
   },
 
+  data() {
+    return {
+      visual: this.visible,
+    };
+  },
+
   computed: {
     width() {
       if (this.size === `full`) {
@@ -59,7 +65,17 @@ export default {
     },
   },
 
+  watch: {
+    visible(value) {
+      this.visual = value;
+    },
+  },
+
   methods: {
+    closeHandle() {
+      this.$emit('update:visible', false);
+    },
+
     visibleHandle(visual) {
       this.$emit('update:visible', visual);
     },
