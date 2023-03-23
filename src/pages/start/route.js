@@ -16,6 +16,15 @@ export default () => {
     component,
     children: [
       {
+        path: '/start/chatgpt',
+        name: 'start-chatgpt',
+        meta: {
+          index: 100,
+          title: 'CHATGPT',
+        },
+        component: () => import('@/pages/start/100.chatgpt.vue'),
+      },
+      {
         path: '/start/overview',
         name: 'start-overview',
         meta: {
